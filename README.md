@@ -68,7 +68,7 @@ flood-prediction/
 
 ## Screenshot
 
-_Add a screenshot of the Streamlit app here._
+![alt text](image.png)
 
 ## Future improvements
 
