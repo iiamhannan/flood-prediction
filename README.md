@@ -21,14 +21,15 @@ with a Streamlit web app for live predictions.
 
 ## Results
 
-Run `python src/train.py`, then paste your own numbers from
-`results/model_comparison.csv` here:
+Results on the held-out test set (20% split, 200k-row sample):
 
 | Model | R2 | RMSE | MAE |
 |---|---|---|---|
-| Linear Regression | _fill in_ | _fill in_ | _fill in_ |
-| Random Forest | _fill in_ | _fill in_ | _fill in_ |
-| XGBoost | _fill in_ | _fill in_ | _fill in_ |
+| Linear Regression | 0.8456 | 0.0201 | 0.0158 |
+| XGBoost | 0.8273 | 0.0212 | 0.0169 |
+| Random Forest | 0.5021 | 0.0361 | 0.0295 |
+
+Linear Regression performed best because the features have a nearly linear relationship with flood probability. Random Forest was limited to `max_depth=12` for fast training, which explains its lower score.
 
 Feature importance plot: `results/feature_importance.png`
 
